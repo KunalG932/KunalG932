@@ -5,13 +5,13 @@
   <img src="https://komarev.com/ghpvc/?username=kunalg932&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
 </p>
 
- <h2 align="center">Connect with Me</h2>
+<h2 align="center">Connect with Me</h2>
 <p align="center">
   <a href="https://instagram.com/itz_kunu_g" target="_blank">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Instagram" height="30" width="40">
+    <img src="https://image.flaticon.com/icons/png/512/2111/2111463.png" alt="Instagram" height="40" width="40">
   </a>
   <a href="https://t.me/ImMitsuoSuwa" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" height="30" width="40" />
+    <img src="https://image.flaticon.com/icons/png/512/2111/2111646.png" alt="Telegram" height="40" width="40" />
   </a>
 </p>
 
@@ -30,15 +30,12 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript (Frontend)" title="JavaScript (Frontend)" width="40" height="40"/>
   <!-- Backend -->
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python (Backend)" title="Python (Backend)" width="40" height="40"/>
-  <!-- Others -->
-  <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="Adobe Illustrator" title="Adobe Illustrator" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="Jenkins" title="Jenkins" width="40" height="40"/>
   <!-- Language -->
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C (Programming Language)" title="C (Programming Language)" width="40" height="40"/>
 </p>
 
 <p align="center">
-  <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=kunalg932&show_icons=true&locale=en&layout=compact" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=kunalg932&show_icons=true&locale=en&layout=compact" alt="Top Languages" />
 </p>
 
 <p align="center">
