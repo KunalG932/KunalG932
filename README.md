@@ -17,14 +17,9 @@
 
 <h2 align="center">Technologies I Work With</h2>
 <p align="center">
-  <!-- Cloud -->
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS (Cloud)" title="AWS (Cloud)" width="40" height="40"/>
-  <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="Heroku (Cloud)" title="Heroku (Cloud)" width="40" height="40"/>
-  <!-- Database -->
   <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase (Database)" title="Firebase (Database)" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="MongoDB (Database)" title="MongoDB (Database)" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL (Database)" title="PostgreSQL (Database)" width="40" height="40"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="Redis (Database)" title="Redis (Database)" width="40" height="40"/>
   <!-- Frontend -->
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5 (Frontend)" title="HTML5 (Frontend)" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript (Frontend)" title="JavaScript (Frontend)" width="40" height="40"/>
