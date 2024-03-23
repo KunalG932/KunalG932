@@ -5,16 +5,6 @@
   <img src="https://komarev.com/ghpvc/?username=kunalg932&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
 </p>
 
-<h2 align="center">Connect with Me</h2>
-<p align="center">
-  <a href="https://instagram.com/itz_kunu_g" target="_blank">
-    <img src="https://image.flaticon.com/icons/png/512/2111/2111463.png" alt="Instagram" height="40" width="40">
-  </a>
-  <a href="https://t.me/ImMitsuoSuwa" target="_blank">
-    <img src="https://image.flaticon.com/icons/png/512/2111/2111646.png" alt="Telegram" height="40" width="40" />
-  </a>
-</p>
-
 <h2 align="center">Technologies I Work With</h2>
 <p align="center">
   <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase (Database)" title="Firebase (Database)" width="40" height="40"/>
