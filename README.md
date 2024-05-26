@@ -8,3 +8,7 @@
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=kunalg932&" alt="GitHub Streak" />
 </p>
+<p align="center">
+  <b>Random dev joke for you!</b><br>
+  <img align="center" src="https://readme-jokes.vercel.app/api" alt="README Jokes">
+</p>
