@@ -3,30 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram Music Player</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <title>Kunal Gaikwad</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body { display: flex; flex-direction: column; align-items: center; }
-        button { margin: 10px; }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
-<body>
-    <h1>Music Player</h1>
-    <input type="text" id="song" placeholder="Enter song name">
-    <button id="play">Play Song</button>
-    <button id="pause">Pause Song</button>
-    <script>
-        const playButton = document.getElementById('play');
-        const pauseButton = document.getElementById('pause');
-
-        playButton.onclick = () => {
-            const song = document.getElementById('song').value;
-            window.Telegram.WebApp.sendData(`play:${song}`);
-        };
-
-        pauseButton.onclick = () => {
-            window.Telegram.WebApp.sendData('pause');
-        };
-    </script>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <header class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-center p-10">
+        <h1 class="text-4xl font-bold fade-in">Hi there! 👋 I'm Kunal Gaikwad</h1>
+        <p class="mt-2 text-lg">Welcome to my personal website</p>
+    </header>
+    <main class="flex-grow flex items-center justify-center">
+        <div class="fade-in">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=kunalg932&show_icons=true&locale=en&layout=compact" alt="Top Languages" class="rounded shadow-lg">
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white text-center p-6">
+        <p>Connect with me:</p>
+        <div class="flex justify-center mt-2">
+            <a href="https://github.com/kunalg932" target="_blank" class="mx-4 hover:text-indigo-500 transition duration-300">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="mx-4 hover:text-indigo-500 transition duration-300">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/your-profile" target="_blank" class="mx-4 hover:text-indigo-500 transition duration-300">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+        </div>
+        <p class="mt-4">&copy; 2024 Kunal Gaikwad</p>
+    </footer>
 </body>
 </html>
