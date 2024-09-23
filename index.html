@@ -32,6 +32,23 @@
                 transform: translateY(-5px);
             }
         }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body class="bg-gray-100 flex flex-col min-h-screen">
@@ -43,21 +60,29 @@
         <div class="fade-in">
             <img src="https://github-readme-stats.vercel.app/api/top-langs?username=kunalg932&show_icons=true&locale=en&layout=compact" alt="Top Languages" class="rounded shadow-lg mb-10">
         </div>
-        <form id="contact-form" class="bg-white p-6 rounded shadow-md">
-            <div class="mb-4">
-                <label for="telegram" class="block text-sm font-medium text-gray-700">Telegram Username</label>
-                <input type="text" id="telegram" name="telegram" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+        <button id="message-icon" class="fixed bottom-6 right-6 bg-indigo-600 text-white rounded-full p-3 shadow-lg hover:bg-indigo-700 transition duration-300">
+            <i class="fas fa-comment-dots fa-lg"></i>
+        </button>
+        <div id="message-modal" class="modal flex">
+            <div class="modal-content">
+                <form id="contact-form" class="bg-white p-6 rounded shadow-md">
+                    <div class="mb-4">
+                        <label for="telegram" class="block text-sm font-medium text-gray-700">Telegram Username</label>
+                        <input type="text" id="telegram" name="telegram" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="gmail" class="block text-sm font-medium text-gray-700">Gmail</label>
+                        <input type="email" id="gmail" name="gmail" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message (Optional)</label>
+                        <textarea id="message" name="message" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 text-white p-2 rounded hover:bg-indigo-700 transition duration-300">Send Message</button>
+                    <button type="button" id="close-modal" class="mt-4 text-red-500 hover:text-red-700">Cancel</button>
+                </form>
             </div>
-            <div class="mb-4">
-                <label for="gmail" class="block text-sm font-medium text-gray-700">Gmail</label>
-                <input type="email" id="gmail" name="gmail" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
-            </div>
-            <div class="mb-4">
-                <label for="message" class="block text-sm font-medium text-gray-700">Message (Optional)</label>
-                <textarea id="message" name="message" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500"></textarea>
-            </div>
-            <button type="submit" class="w-full bg-indigo-600 text-white p-2 rounded hover:bg-indigo-700 transition duration-300">Send Message</button>
-        </form>
+        </div>
     </main>
     <footer class="bg-gray-800 text-white text-center p-6">
         <p class="text-lg">Connect with me:</p>
@@ -82,6 +107,14 @@
     </footer>
 
     <script>
+        document.getElementById('message-icon').addEventListener('click', function() {
+            document.getElementById('message-modal').style.display = 'flex';
+        });
+
+        document.getElementById('close-modal').addEventListener('click', function() {
+            document.getElementById('message-modal').style.display = 'none';
+        });
+
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
             const telegram = event.target.telegram.value;
@@ -106,6 +139,7 @@
                 if (response.ok) {
                     alert('Message sent successfully!');
                     event.target.reset();
+                    document.getElementById('message-modal').style.display = 'none';
                 } else {
                     alert('Failed to send message.');
                 }
